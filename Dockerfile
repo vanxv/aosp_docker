@@ -47,3 +47,9 @@ ENV JAVA_HOME /usr/lib/jvm/java-se-8u41-ri
 # RUN echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> /home/aosp/.bashrc
 # RUN apt-get install -y openjdk-7-jdk
 # RUN apt-get install -y openjdk-8-jdk
+
+
+# android source volume
+USER root
+WORKDIR /home/root
+ENV USER root
